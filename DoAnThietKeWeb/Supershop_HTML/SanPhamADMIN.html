@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../vendor/Bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/FontAwesome/fontawesome-free-5.8.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../Supershop_CSS/sanphamadmin.css">
+    <title>QL Sản Phẩm ADMIN</title>
+</head>
+<body>
+    <div class="c">
+          <p class="admin">Super Shop</p>
+    </div>
+    <div class="container-fluid row">
+      <div class="col-md-12">
+          <div class="tile">
+            <div class="tile-body">
+              <div class="row element-button">
+                  </div>
+              </div>
+              <div class="app-title">
+                <ul class="app-breadcrumb breadcrumb side justify-content-center">
+                  <li class="breadcrumb-item active"><b>QUẢN LÍ SẢN PHẨM CỦA ADMIN </b></li>
+                </ul>
+              </div>
+              <div class="col-sm-2"></div>
+              <button type="button" class="btn btn-add btn-sm fas fa-plus" data-toggle="modal" data-target="#myModall2" >
+                  Tạo mới sản phẩm
+               </button>
+               <div class="modal" id="myModall2">
+                <div class="modal-dialog modal-lm">
+                   <div class="modal-content">
+                      <div class="modal-header">
+                         <h4 class="modal-title"> Chỉnh sửa thông tin cơ bản</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                         </div>
+                       <div class="modal-body">
+                        <form method="post">
+                          <b class="chu">Ảnh</b><br>
+                          <input type="file" accept="image/*" multiple="multiple"><br><br>
+                          <b class="chu">Tên sản phẩm</b><br>
+                        <input class="chuanchu2" placeholder="Nhập tối thiểu 10 ký tự"  minlength="10" required="required" size="30"><br>
+                        <b class="chu">Loại</b><br>
+                        <input class="chuanchu2" placeholder="Nhập vào loại sản phẩm"  minlength="5" required="required" size="30"><br>
+                        <b class="chu">Giá bán</b><br>
+                        <input class="chuanchu2" placeholder="nhập vào số" pattern="[1-9]\d{9}" required="required" size="50" ><br>
+                        <b class="chu">Giá khuyến mãi</b><br>
+                        <input class="chuanchu2" placeholder="nhập vào số" pattern="[1-9]\d{9}" required="required" size="50" ><br>
+                        <b class="chu">Tình trạng</b><br>
+                        <label><input type="radio" name="tinhtrang" value="dangkinhdoanh"> Đang kinh doanh</label><br>
+                        <label><input type="radio" name="tinhtrang" value="ngungkinhdoanh"> Ngừng kinh doanh</label><br>
+                        <br>
+                        <input type="submit" class="chuanoption" value="Lưu">
+                        </form>
+                         <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                         </div>
+                      </div>
+                   </div>
+                 </div>
+                </div><br>
+              <br>
+              <div class="row"><div class="col-sm-12"><table class="table table-hover table-bordered dataTable no-footer" id="sampleTable" role="grid" aria-describedby="sampleTable_info">
+                <thead><tr>
+                    <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Đơn hàng: activate to sort column ascending" style="width: 227.641px;">Tên sản phẩm</th>
+                    <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Tổng tiền: activate to sort column ascending" style="width: 78.25px;">Loại</th>
+                    <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Số lượng: activate to sort column ascending" style="width: 76.3594px;">Ảnh</th>
+                    <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Tổng tiền: activate to sort column ascending" style="width: 98.75px;">Giá gốc</th>
+                    <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Tình trạng: activate to sort column ascending" style="width: 98.75px;">Giá khuyến mãi</th>
+                    <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Lý do hủy: activate to sort column ascending" style="width: 50.75px;">Tình trạng</th>
+                    <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Lý do hủy: activate to sort column ascending" style="width: 98.75px;">Chức năng</th>
+                </tr></thead>
+                <tbody>
+                  <tr><td class="chuanchu">
+                    Xe Lamborghini Aventador LP 740
+                  </td>
+                  <td class="chuanchu">Mô hình </td>
+                  <td><img src="../imgs/SP01.jpg" alt="" class="anh" ></td>
+                  <td class="chuanchu">1.000.000  vnd</td>
+                  <td class="chuanchu">900.000 vnd</td>
+                  <td class="chuanchu3">đang kinh doanh</td>
+                  <td><button class=" btn-sm trash chuanxoa" type="button" title="Xóa" onclick="myFunction(this)" data-toggle="modal" data-target="#myModal15"><i class="fas fa-trash-alt"></i> 
+                  </button>
+                  <div class="modal" id="myModal15">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h4 class="modal-title "> Bạn có chắc chắn muốn xóa sản phẩm này??</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                           <div class="modal-footer">
+                            <button type="button" class="btn2 btn-danger2" data-dismiss="modal">Xác nhận</button>
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                     </div>
+                   </div>
+                  </div>
+                  <button type="button" class="btn btn-primary chuansua" data-toggle="modal" data-target="#myModalll5" >
+                    Sửa
+               </button>
+               <div class="modal" id="myModalll5">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h4 class="modal-title"> Chỉnh sửa thông tin cơ bản</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                         <div class="modal-body">
+                          <form method="post">
+                            <b class="chu">Ảnh</b><br><img src="../imgs/SP05.jpg" alt="" class="anh2" ><br> <br>
+                            <input type="file" accept="image/*" multiple="multiple"><br><br>
+                            <b class="chu">Tên sản phẩm</b><br>
+                          <input class="chuanchu2" placeholder="Nhập tối thiểu 10 ký tự" value=" Xe Lamborghini Aventador LP 740" minlength="10" required="required" size="30"><br>
+                          <b class="chu">Loại</b><br>
+                          <input class="chuanchu2" placeholder="Nhập vào loại sản phẩm" value="Mô hình" minlength="5" required="required" size="30"><br>
+                          <b class="chu">Giá bán</b><br>
+                          <input class="chuanchu2" placeholder="nhập vào số" value="950.000" pattern="[1-9]\d{9}" required="required" size="50" ><br>
+                          <b class="chu">Giá khuyến mãi</b><br>
+                          <input class="chuanchu2" placeholder="nhập vào số"  value="900.000"  pattern="[1-9]\d{9}" required="required" size="50"><br>
+                          <b class="chu">Tình trạng</b><br>
+                          <label><input type="radio" name="tinhtrang" value="dangkinhdoanh"> Đang kinh doanh</label><br>
+                          <label><input type="radio" name="tinhtrang" value="ngungkinhdoanh"> Ngừng kinh doanh</label><br>
+                          <br>
+                          <input type="submit" class="chuanoption" value="Lưu">
+                          </form>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                </td>
+                  </tr>
+                  <tr><td class="chuanchu">
+                    Xe z1000 LP737
+                  </td>
+                  <td class="chuanchu">Mô hình </td>
+                  <td><img src="../imgs/SP03.jpg" alt="" class="anh" ></td>
+                  <td class="chuanchu">500.000  vnd</td>
+                  <td class="chuanchu">400.000 vnd</td>
+                  <td class="chuanchu3">đang kinh doanh</td>
+                   <td><button class=" btn-sm trash chuanxoa" type="button" title="Xóa" onclick="myFunction(this)" data-toggle="modal" data-target="#myModal16"><i class="fas fa-trash-alt"></i> 
+                  </button>
+                  <div class="modal" id="myModal16">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h4 class="modal-title "> Bạn có chắc chắn muốn xóa sản phẩm này??</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                           <div class="modal-footer">
+                            <button type="button" class="btn2 btn-danger2" data-dismiss="modal">Xác nhận</button>
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                     </div>
+                  </div>
+                  </div>
+                  <button type="button" class="btn btn-primary chuansua" data-toggle="modal" data-target="#myModal2" >
+                    Sửa
+               </button>
+               <div class="modal" id="myModal2">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h4 class="modal-title"> Chỉnh sửa thông tin cơ bản</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                         <div class="modal-body">
+                          <form method="post">
+                            <b class="chu">Ảnh</b><br><img src="../imgs/SP06.jpg" alt="" class="anh2" ><br> <br>
+                            <input type="file" accept="image/*" multiple="multiple"><br><br>
+                            <b class="chu">Tên sản phẩm</b><br>
+                          <input class="chuanchu2" placeholder="Nhập tối thiểu 10 ký tự" value=" Xe z1000 LP737" minlength="10" required="required" size="30"><br>
+                          <b class="chu">Loại</b><br>
+                          <input class="chuanchu2" placeholder="Nhập vào loại sản phẩm" value="Mô hình"  minlength="5" required="required" size="30"><br>
+                          <b class="chu">Giá bán</b><br>
+                          <input class="chuanchu2" placeholder="nhập vào số" value="500.000" pattern="[1-9]\d{9}" required="required" size="50" ><br>
+                          <b class="chu">Giá khuyến mãi</b><br>
+                          <input class="chuanchu2" placeholder="nhập vào số"  value="400.000" pattern="[1-9]\d{9}" required="required" size="50"><br>
+                          <b class="chu">Tình trạng</b><br>
+                          <label><input type="radio" name="tinhtrang" value="dangkinhdoanh"> Đang kinh doanh</label><br>
+                          <label><input type="radio" name="tinhtrang" value="ngungkinhdoanh"> Ngừng kinh doanh</label><br>
+                          <br>
+                          <input type="submit" class="chuanoption" value="Lưu">
+                          </form>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                </td>
+                  </tr>
+                  <tr><td class="chuanchu">
+                    Xe Lamborghini MRB 656
+                  </td>
+                  <td class="chuanchu">Mô hình </td>
+                  <td><img src="../imgs/SP07.jpg" alt="" class="anh" ></td>
+                  <td class="chuanchu">750.000  vnd</td>
+                  <td class="chuanchu">700.000 vnd</td>
+                  <td class="chuanchu4">Ngừng kinh doanh</td>
+                  <td>
+                  <button type="button" class="btn btn-primary2 chuanphuchoi" data-toggle="modal" data-target="#myModal3" >
+                    Phục hồi
+               </button>
+                </td>
+                  </tr>
+                  <tr><td class="chuanchu">
+                    Mô hình xe MECSEDES cổ 1952
+                  </td>
+                  <td class="chuanchu">Mô hình </td>
+                  <td><img src="../imgs/SP11.jpg" alt="" class="anh" ></td>
+                  <td class="chuanchu">475.000  vnd</td>
+                  <td class="chuanchu">450.000 vnd</td>
+                  <td class="chuanchu3">Đang kinh doanh</td>
+                  <td><button class=" btn-sm trash chuanxoa" type="button" title="Xóa" onclick="myFunction(this)" data-toggle="modal" data-target="#myModalll15"><i class="fas fa-trash-alt"></i> 
+                  </button>
+                  <div class="modal" id="myModalll15">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h4 class="modal-title "> Bạn có chắc chắn muốn xóa sản phẩm này??</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                           <div class="modal-footer">
+                            <button type="button" class="btn2 btn-danger2" data-dismiss="modal">Xác nhận</button>
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                     </div>
+                   </div>
+                  </div>
+                  <button type="button" class="btn btn-primary chuansua" data-toggle="modal" data-target="#myModal4" >
+                    Sửa
+               </button>
+               <div class="modal" id="myModal4">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h4 class="modal-title"> Chỉnh sửa thông tin cơ bản</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                         <div class="modal-body">
+                          <form method="post">
+                            <b class="chu">Ảnh</b><br><img src="../imgs/SP14.jpg" alt="" class="anh2" ><br> <br>
+                            <input type="file" accept="image/*" multiple="multiple"><br><br>
+                            <b class="chu">Tên sản phẩm</b><br>
+                          <input class="chuanchu2" placeholder="Nhập tối thiểu 10 ký tự" value=" Mô hình xe MECSEDES cổ 1952" minlength="10" required="required" size="30"><br>
+                          <b class="chu">Loại</b><br>
+                          <input class="chuanchu2" placeholder="Nhập vào loại sản phẩm" value="Mô hình"  minlength="5" required="required" size="30"><br>
+                          <b class="chu">Giá bán</b><br>
+                          <input class="chuanchu2" placeholder="nhập vào số" value="475.000" pattern="[1-9]\d{9}" required="required" size="50"><br>
+                          <b class="chu">Giá khuyến mãi</b><br>
+                          <input class="chuanchu2" placeholder="nhập vào số"  value="4500.000"  pattern="[1-9]\d{9}" required="required" size="50" ><br>
+                          <b class="chu">Tình trạng</b><br>
+                          <label><input type="radio" name="tinhtrang" value="dangkinhdoanh"> Đang kinh doanh</label><br>
+                          <label><input type="radio" name="tinhtrang" value="ngungkinhdoanh"> Ngừng kinh doanh</label><br>
+                          <br>
+                          <input type="submit" class="chuanoption" value="Lưu">
+                          </form>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                </td>
+                  </tr>
+                  <tr><td class="chuanchu">
+                    Xe bán tải Honda MB356
+                  </td>
+                  <td class="chuanchu">Mô hình </td>
+                  <td><img src="../imgs/SP12.jpg" alt="" class="anh" ></td>
+                  <td class="chuanchu">600.000  vnd</td>
+                  <td class="chuanchu">550.000 vnd</td>
+                  <td class="chuanchu4">Ngừng kinh doanh</td>
+                  <td>
+                  <button type="button" class="btn btn-primary2 chuanphuchoi" data-toggle="modal" data-target="#myModall" >
+                    Phục hồi
+                </button>
+                </td>
+                  </tr>
+                  <tr><td class="chuanchu">
+                    Xe thể thao Lambogini 5594
+                  </td>
+                  <td class="chuanchu">Mô hình </td>
+                  <td><img src="../imgs/SP08.jpg" alt="" class="anh" ></td>
+                  <td class="chuanchu">600.000  vnd</td>
+                  <td class="chuanchu">No discount</td>
+                  <td class="chuanchu3">đang kinh doanh</td>
+                  <td><button class=" btn-sm trash chuanxoa" type="button" title="Xóa" onclick="myFunction(this)" data-toggle="modal" data-target="#myModal135"><i class="fas fa-trash-alt"></i> 
+                  </button>
+                  <div class="modal" id="myModal135">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h4 class="modal-title "> Bạn có chắc chắn muốn xóa sản phẩm này??</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                           <div class="modal-footer">
+                            <button type="button" class="btn2 btn-danger2" data-dismiss="modal">Xác nhận</button>
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                     </div>
+                   </div>
+                  </div>
+                  <button type="button" class="btn btn-primary chuansua" data-toggle="modal" data-target="#myModal6" >
+                    Sửa
+               </button>
+               <div class="modal" id="myModal6">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h4 class="modal-title"> Chỉnh sửa thông tin cơ bản</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                         <div class="modal-body">
+                          <form method="post">
+                            <b class="chu">Ảnh</b><br><img src="../imgs/SP07.jpg" alt="" class="anh2" ><br> <br>
+                            <input type="file" accept="image/*" multiple="multiple"><br><br>
+                            <b class="chu">Tên sản phẩm</b><br>
+                          <input class="chuanchu2" placeholder="Nhập tối thiểu 10 ký tự" value="Xe thể thao Lambogini 5594" minlength="10" required="required" size="30"><br>
+                          <b class="chu">Loại</b><br>
+                          <input class="chuanchu2" placeholder="Nhập vào loại sản phẩm" value="Mô hình" minlength="5" required="required" size="30"><br>
+                          <b class="chu">Giá bán</b><br>
+                          <input class="chuanchu2" placeholder="nhập vào số" value="600.000" pattern="[1-9]\d{9}" required="required" size="50"><br>
+                          <b class="chu">Giá khuyến mãi</b><br>
+                          <input class="chuanchu2" placeholder="nhập vào số" size="50" ><br>
+                          <b class="chu">Tình trạng</b><br>
+                          <label><input type="radio" name="tinhtrang" value="dangkinhdoanh"> Đang kinh doanh</label><br>
+                          <label><input type="radio" name="tinhtrang" value="ngungkinhdoanh"> Ngừng kinh doanh</label><br>
+                          <br>
+                          <input type="submit" class="chuanoption" value="Lưu">
+                          </form>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                </td>
+                  </tr>
+                  <tr><td class="chuanchu">
+                    Xe MOTO Yamaha 4.0
+                  </td>
+                  <td class="chuanchu">Mô hình </td>
+                  <td><img src="../imgs/chitiet5.jpg" alt="" class="anh" ></td>
+                  <td class="chuanchu">1.150.000  vnd</td>
+                  <td class="chuanchu">500.000 vnd</td>
+                  <td class="chuanchu3">đang kinh doanh</td>
+                  <td><button class=" btn-sm trash chuanxoa" type="button" title="Xóa" onclick="myFunction(this)" data-toggle="modal" data-target="#myModal155"><i class="fas fa-trash-alt"></i> 
+                  </button>
+                  <div class="modal" id="myModal155">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h4 class="modal-title "> Bạn có chắc chắn muốn xóa sản phẩm này??</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                           <div class="modal-footer">
+                            <button type="button" class="btn2 btn-danger2" data-dismiss="modal">Xác nhận</button>
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                     </div>
+                   </div>
+                  </div>
+                  <button type="button" class="btn btn-primary chuansua" data-toggle="modal" data-target="#myModal8" >
+                    Sửa
+               </button>
+               <div class="modal" id="myModal8">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h4 class="modal-title"> Chỉnh sửa thông tin cơ bản</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                         <div class="modal-body">
+                          <form method="post">
+                            <b class="chu">Ảnh</b><br><img src="../imgs/SP02.jpg" alt="" class="anh2" ><br> <br>
+                            <input type="file" accept="image/*" multiple="multiple"><br><br>
+                            <b class="chu">Tên sản phẩm</b><br>
+                          <input class="chuanchu2" placeholder="Nhập tối thiểu 10 ký tự" value=" Xe MOTO Yamaha 4.0" minlength="10" required="required" size="30"><br>
+                          <b class="chu">Loại</b><br>
+                          <input class="chuanchu2" placeholder="Nhập vào loại sản phẩm" value="Mô hình" minlength="5" required="required" size="30"><br>
+                          <b class="chu">Giá bán</b><br>
+                          <input class="chuanchu2" placeholder="nhập vào số" value="6150.000" pattern="[1-9]\d{9}" required="required" size="50"><br>
+                          <b class="chu">Giá khuyến mãi</b><br>
+                          <input class="chuanchu2" placeholder="nhập vào số"  value="550.000"   size="50"><br>
+                          <b class="chu">Tình trạng</b><br>
+                          <label><input type="radio" name="tinhtrang" value="dangkinhdoanh"> Đang kinh doanh</label><br>
+                          <label><input type="radio" name="tinhtrang" value="ngungkinhdoanh"> Ngừng kinh doanh</label><br>
+                          <br>
+                          <input type="submit" class="chuanoption" value="Lưu">
+                          </form>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                </td>
+                  </tr>
+                  <tr><td class="chuanchu">
+                    Xe Lamborghini Huracan
+                  </td>
+                  <td class="chuanchu">Mô hình </td>
+                  <td><img src="../imgs/SP10.jpg" alt="" class="anh" ></td>
+                  <td class="chuanchu">300.000  vnd</td>
+                  <td class="chuanchu">No discount</td>
+                  <td class="chuanchu3">đang kinh doanh</td>
+                  <td><button class=" btn-sm trash chuanxoa" type="button" title="Xóa" onclick="myFunction(this)" data-toggle="modal" data-target="#myModal145"><i class="fas fa-trash-alt"></i> 
+                  </button>
+                  <div class="modal" id="myModal145">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h4 class="modal-title "> Bạn có chắc chắn muốn xóa sản phẩm này??</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                           <div class="modal-footer">
+                            <button type="button" class="btn2 btn-danger2" data-dismiss="modal">Xác nhận</button>
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                     </div>
+                   </div>
+                  </div>
+                  <button type="button" class="btn btn-primary chuansua" data-toggle="modal" data-target="#myModal9">
+                    Sửa
+               </button>
+               <div class="modal" id="myModal9">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h4 class="modal-title"> Chỉnh sửa thông tin cơ bản</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                         <div class="modal-body">
+                          <form method="post">
+                            <b class="chu">Ảnh</b><br><img src="../imgs/chitiet2.jpg" alt="" class="anh2" ><br> <br>
+                            <input type="file" accept="image/*" multiple="multiple"><br><br>
+                            <b class="chu">Tên sản phẩm</b><br>
+                          <input class="chuanchu2" placeholder="Nhập tối thiểu 10 ký tự" value=" Xe Lamborghini Huracan" minlength="10" required="required" size="30"><br>
+                          <b class="chu">Loại</b><br>
+                          <input class="chuanchu2" placeholder="Nhập vào loại sản phẩm" value="Mô hình" minlength="5" required="required" size="30"><br>
+                          <b class="chu">Giá bán</b><br>
+                          <input class="chuanchu2" placeholder="nhập vào số" value="300.000" pattern="[1-9]\d{9}" required="required" size="50" ><br>
+                          <b class="chu">Giá khuyến mãi</b><br>
+                          <input class="chuanchu2" placeholder="nhập vào số" size="50" ><br>
+                          <b class="chu">Tình trạng</b><br>
+                          <label><input type="radio" name="tinhtrang" value="dangkinhdoanh"> Đang kinh doanh</label><br>
+                          <label><input type="radio" name="tinhtrang" value="ngungkinhdoanh"> Ngừng kinh doanh</label><br>
+                          <br>
+                          <input type="submit" class="chuanoption" value="Lưu">
+                          </form>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                </td>
+                  </tr>
+
+                </tbody>
+              </table></div></div>
+              <div class="row">
+                <div class="col-sm-12 col-md-5">
+                <div class="dataTables_info" id="sampleTable_info" role="status" aria-live="polite">Hiện 1 đến 9 của 100 danh mục</div>
+              </div>
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled ">
+                    <a class="btn btn-outline-dark " href="#" tabindex="-1"><i class="fas fa-chevron-left "></i>
+                        Previous</a>
+                </li>
+                <li class="page-item"><a class="btn btn-outline-dark" href="#">1</a></li>
+                <li class="page-item"><a class="btn btn-outline-dark" href="#">2</a></li>
+                <li class="page-item"><a class="btn btn-outline-dark" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="btn btn-outline-dark " href="#">Next <i class="fas fa-chevron-right "></i></a>
+                </li>
+            </ul>
+            </div>
+            </div>
+            </div>
+    </div>
+
+    <div id="LH" class="footer">
+      <div class="container">
+          <div class="row">
+
+              <a class="nav-link" href="#">
+                  <img class="logo1" src="../imgs/LOGO.png" alt="#" /><br>
+                  SuperShop.com
+              </a>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <h3>Thông tin liên hệ</h3>
+                  <ul>
+                      <li class="nav-item">
+                          <a class="mb-10" href="#">
+                              <i class="fa fa-door-open icon1" aria-hidden="true"></i>
+                              Giờ Mở Cửa: 6:30 - 21:00
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="mb-10" href="#">
+                              <i class="fa fa-location-arrow icon1" aria-hidden="true"></i>
+                              65 Huỳnh Thúc Kháng, Q.1 TP.HCM.
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="mb-10" href="#">
+                              <i class="fa fa-phone-volume icon1" aria-hidden="true"></i>
+                              028 38 212 868
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="mb-10" href="#">
+                              <i class="fa fa-mail-bulk icon1" aria-hidden="true"></i>
+                              ktct@caothang.edu.vn
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="mb-10" href="#">
+                              <i class="fab fa-internet-explorer icon1" aria-hidden="true"></i>
+                              www.supershop@gmail.com
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <h3>Team SuperShop </h3>
+                  <ul>
+                      <li>
+                          1. Lương Nhật Trường<br />
+                          2. Lê Phước Sang<br />
+                          3. Nguyễn Thanh Sang<br />
+                          4. Nguyễn Công Thành<br />
+                          5. Trần Vũ Minh Thương<br />
+                          6. Cao Trí Nhất<br />
+                          7. Quách Văn Sang<br />
+                          8. Huỳnh Phước Thịnh<br />
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <h3>Chính Sách và Hỗ trợ khách hàng</h3>
+                  <ul>
+                      <li>
+                          Tuyển dụng
+                          <br />
+                          Chương trình tích điểm
+                          <br />
+                          Chính sách giao hàng toàn quốc
+                          <br />
+                          Chính sách bảo mật
+                      </li>
+                  </ul>
+              </div>
+                  <div class="column">
+                      <h3>Đối Tác </h3>
+                  <ul class="row">
+                      <li class="nav-item">
+                          <a class="mb-10" href="#">
+                              <i class="fab fa-facebook icon-search" aria-hidden="true"></i>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="mb-10" href="#">
+                              <i class="fab fa-twitter icon-search" aria-hidden="true"></i>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="mb-10" href="#">
+                              <i class="fab fa-instagram icon-search" aria-hidden="true"></i>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="mb-10" href="#">
+                              <i class="fab fa-pinterest icon-search" aria-hidden="true"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+              <hr class="hr">
+              © 2022 All Rights Reserved. Design by<a href="#">
+                  SuperShop@gmail.com</a>
+      </div>
+    </div>
+
+
+    <script src="../vendor/jQuery/jquery-3.2.1.min.js"></script>
+      <script src="../vendor/Bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+      <script src="../vendor/jQuery/popper.min.js"></script>
+      </body>
+      </html>

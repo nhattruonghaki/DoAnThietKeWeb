@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRANG CHỦ ADMIN</title>
+        <link rel="stylesheet" href="../vendor/Bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../vendor/FontAwesome/fontawesome-free-5.8.1-web/css/all.min.css" />
+    <link rel="stylesheet" href="../Supershop_CSS/TrangChu.css" />
+
+</head>
+<body>
+    <header id="header">
+        <!-- MENU -->
+        <div class="container-fluid">
+            <nav id="main-menu" class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <button class="btn btn-outline-warning navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+      
+                <i id="hi">SuperShop.com</i>
+                <a class="nav-link" href="./TrangChuAdmin.html">
+                    <img class="logo" src="../imgs/LOGO.png" alt="LOGO">
+                </a>
+                
+                <a id="login" class="nav-link" href="./LOGIN.html"> Đăng nhập </a>
+               
+
+                <div class="row d-flex justify-content-center align-items-center">
+                    <form action="#" class="form-inline my-2 my-lg-0">
+                        <input id="search" class="form-control mr-sm-2" type="search" name="SP"
+                            placeholder="Search tên mô hình..." aria-hidden="true" />
+                        <button class="fa fa-search icon-search" type="submit">
+                        </button>
+                    </form>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="btn btn-outline-danger fa fa-book-reader " href="#" id="navbarDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Danh mục sản phẩm
+                            </a>
+                            <div class="dropdown-menu ss" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#SPKM">Sản phẩm khuyến mãi</a>
+                                <a class="dropdown-item" href="#SPBC">Sản phẩm bán chạy</a>
+                                <a class="dropdown-item" href="#SPM">Sản phẩm mới</a>
+                                <a class="dropdown-item" href="#LH">Liên hệ</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="btn btn-outline-danger fa fa-user-secret  " href="#"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ADMIN
+                            </a>
+                            <div class="dropdown-menu ss" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./SanPhamADMIN.html">Quản lí sản phẩm AD</a>
+                                <a class="dropdown-item" href="./DonHangADMIN.html">Quản lí đơn hàng AD</a>
+                                <a class="dropdown-item" href="./TKBC.html">Thống kê báo cáo AD</a>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i id="bell" class="fa fa-bell fa-lg icon" aria-hidden="true"></i></a>    
+                            </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./GioHang.html">
+                                <i id="cart" class="fa fa-cart-arrow-down fa-lg icon" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- SLIDE_SHOW -->
+    <div id="header1">
+        <div id="slideshow">
+            <img class="slide" src="../imgs/sale1.webp" alt="sale 50%">
+            <img class="slide" src="../imgs/sale2.webp" alt="sale 50%">
+            <img class="slide" src="../imgs/sale3.jpg" alt="sale 50%">
+            <img class="slide" src="../imgs/sale4.webp" alt="sale 50%">
+        </div>
+    </div>
+    </header>
+
+    <!-- SẢN PHẨM KHUYỄN MÃI -->
+    <div id="SPKM" class="products">
+        <div class="img-background row">
+            <div class="col-md-12 title_page">
+                <h2 class="fa fa-piggy-bank"> KHUYẾN MÃI HOT</h2>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="01">
+                        <img src="../imgs/SP01.jpg" class="card-img-top" alt="kawasaki Z1000__SP01">
+                        <b>kawasaki Z1000__SP01
+                        </b><br>
+                                <span class=" btn btn-outline-danger">Giá cũ: <s>2,500,000 VNĐ</s><br>Giá mới: 1,250,000 VNĐ </span>
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="01">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="02">
+                        <img src="../imgs/SP02.jpg" class="card-img-top" alt="Huracan LP610-4 __SP02">
+                        <b>Huracan LP610-4 __SP02
+                        </b><br>
+                                <span class=" btn btn-outline-danger">Giá cũ: <s>3,000,000 VNĐ</s><br>Giá mới: 1,500,000 VNĐ</span>
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="02">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="03">
+                        <img src="../imgs/SP03.jpg" class="card-img-top" alt="Lamborghini Huracan__SP03">
+                        <b>Lamborghini Huracan__SP03
+                        </b><br>
+                                <span class=" btn btn-outline-danger">Giá cũ: <s>2,200,000 VNĐ</s><br>Giá mới: 1,100,000 VNĐ</span>
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="03">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+ 
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="04">
+                        <img src="../imgs/SP04.jpg" class="card-img-top" alt="BMW S10000RR__SP04">
+                        <b>BMW S10000RR__SP04
+                        </b><br>
+                                <span class=" btn btn-outline-danger">Giá cũ: <s>1,400,000 VNĐ</s><br>Giá mới: 700,000 VNĐ</span>
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="04">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- SẢN PHẨM BÁN CHẠY -->
+    <div id="SPBC" class="products">
+        <div class="img-background row">
+            <div class="col-md-12 title_page">
+                <h2 id="dautien"> SẢN PHẨM BÁN CHẠY </h2>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="05">
+                        <img src="../imgs/SP05.jpg" class="card-img-top" alt="Lambo LP750__SP05">
+                        <b>Lambo LP750__SP05
+                        </b><br>
+                                <span class=" btn btn-outline-danger">Giá: 1,800,000 VNĐ</span>
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="05">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="06">
+                        <img src="../imgs/SP06.jpg" class="card-img-top" alt="Lamborghini__SP06">
+                        <b>Lamborghini__SP06
+                        </b><br>
+                                <span class=" btn btn-outline-danger">Giá: 1,650,000 VNĐ</span>
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="06">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="07">
+                        <img src="../imgs/SP07.jpg" class="card-img-top" alt="Mclaren__SP07">
+                        <b>Mclaren__SP07
+                        </b><br>
+                                <span class=" btn btn-outline-danger">Giá: 1,700,000 VNĐ</span>
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="07">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="08">
+                        <img src="../imgs/SP08.jpg" class="card-img-top" alt="Aventador__SP08">
+                        <b>Aventador__SP08
+                        </b><br>
+                                <span  class=" btn btn-outline-danger">Giá: 1,400,000 VNĐ</span>
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="08">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SẢN PHẨM MỚI -->
+    <div id="SPM" class="products">
+        <div class="img-background row">
+            <div class="col-md-12 title_page">
+                <h2> SẢN PHẨM MỚI</h2>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="09">
+                        <img src="../imgs/SP09.jpg" class="card-img-top" alt="sidecar__SP09">
+                        <b>sidecar__SP09
+                        </b><br>
+                       
+                                <span class=" btn btn-outline-danger">Giá:2,500,000 VNĐ</span>
+                       
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="09">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="10">
+                        <img src="../imgs/SP10.jpg" class="card-img-top" alt="Mercedes__SP10">
+                        <b>Mercedes__SP10
+                        </b><br>
+                        
+                                <span class=" btn btn-outline-danger">Giá: 900,000 VNĐ</span>
+                        
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="10">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="11">
+                        <img src="../imgs/SP11.jpg" class="card-img-top" alt="Rolls-Royce__SP11">
+                        <b>Rolls-Royce__SP11
+                        </b><br>
+                        
+                                <span class=" btn btn-outline-danger">Giá: 2,100,000 VNĐ</span>
+                       
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="11">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="12">
+                        <img src="../imgs/SP12.jpg" class="card-img-top" alt="Ducati R1__SP12">
+                        <b>Ducati R1__SP12
+                        </b><br>
+                        
+                                <span class=" btn btn-outline-danger">Giá: 3,000,000 VNĐ</span>
+                       
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="12">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="13">
+                        <img src="../imgs/SP13.jpg" class="card-img-top" alt="Gallardo__SP13">
+                        <b>Gallardo__SP13
+                        </b><br>
+                       
+                                <span class=" btn btn-outline-danger">Giá: 2,000,000 VNĐ</span>
+                       
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="13">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="14">
+                        <img src="../imgs/SP14.jpg" class="card-img-top" alt="Bugati__SP14">
+                        <b>Bugati__SP14
+                        </b><br>
+                        
+                                <span class=" btn btn-outline-danger">Giá: 700,000 VNĐ</span>
+                        
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="14">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="15">
+                        <img src="../imgs/SP15.jpg" class="card-img-top" alt="YAMAHA R6__SP15">
+                        <b>YAMAHA R6__SP15
+                        </b><br>
+                        
+                                <span class=" btn btn-outline-danger">Giá: 850,000 VNĐ</span>
+                       
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="15">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                    <button class="khung" type="submit">
+                        <input type="hidden" name="SP" value="16">
+                        <img src="../imgs/SP16.jpg" class="card-img-top" alt="ferrari__SP16">
+                        <b>ferrari__SP16
+                        </b><br>
+                        
+                                <span class=" btn btn-outline-danger">Giá: 850,000 VNĐ</span>
+                        
+                    </button>
+                </form>
+                <div class="truocxuong">
+                    <form action="./GioHang.html">
+                        <input type="hidden" name="SP" value="16">
+                        <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PHÂN TRANG -->
+
+    <nav aria-label="Page navigation example ">
+        <ul class="pagination justify-content-center btn btn-outline-warning">
+            <li class="page-item disabled ">
+                <a class="btn btn-outline-dark " href="#" tabindex="-1"><i class="fas fa-chevron-left "></i>
+                    Previous</a>
+            </li>
+            <li class="page-item"><a class="btn btn-outline-dark" href="#">1</a></li>
+            <li class="page-item"><a class="btn btn-outline-dark" href="#">2</a></li>
+            <li class="page-item"><a class="btn btn-outline-dark" href="#">3</a></li>
+            <li class="page-item">
+                <a class="btn btn-outline-dark " href="#">Next <i class="fas fa-chevron-right "></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- CUỐI TRANG -->
+    <div id="LH" class="footer">
+        <div class="container">
+            <div class="row">
+
+                <a class="nav-link" href="#">
+                    <img class="logo1" src="../imgs/LOGO.png" alt="#" /><br>
+                    SuperShop.com
+                </a>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <h3>Thông tin liên hệ</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="mb-10" href="#">
+                                <i class="fa fa-door-open icon1" aria-hidden="true"></i>
+                                Giờ Mở Cửa: 6:30 - 21:00
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mb-10" href="#">
+                                <i class="fa fa-location-arrow icon1" aria-hidden="true"></i>
+                                65 Huỳnh Thúc Kháng, Q.1 TP.HCM.
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mb-10" href="#">
+                                <i class="fa fa-phone-volume icon1" aria-hidden="true"></i>
+                                028 38 212 868
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mb-10" href="#">
+                                <i class="fa fa-mail-bulk icon1" aria-hidden="true"></i>
+                                ktct@caothang.edu.vn
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mb-10" href="#">
+                                <i class="fab fa-internet-explorer icon1" aria-hidden="true"></i>
+                                www.supershop@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <h3>Team SuperShop </h3>
+                    <ul>
+                        <li>
+                            1. Lương Nhật Trường<br />
+                            2. Lê Phước Sang<br />
+                            3. Nguyễn Thanh Sang<br />
+                            4. Nguyễn Công Thành<br />
+                            5. Trần Vũ Minh Thương<br />
+                            6. Cao Trí Nhất<br />
+                            7. Quách Văn Sang<br />
+                            8. Huỳnh Phước Thịnh<br />
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <h3>Chính Sách và Hỗ trợ khách hàng</h3>
+                    <ul>
+                        <li>
+                            Tuyển dụng
+                            <br />
+                            Chương trình tích điểm
+                            <br />
+                            Chính sách giao hàng toàn quốc
+                            <br />
+                            Chính sách bảo mật
+                        </li>
+                    </ul>
+                </div>
+                    <div class="column">
+                        <h3>Đối Tác </h3>
+                    <ul class="row">
+                        <li class="nav-item">
+                            <a class="mb-10" href="#">
+                                <i class="fab fa-facebook icon-search" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mb-10" href="#">
+                                <i class="fab fa-twitter icon-search" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mb-10" href="#">
+                                <i class="fab fa-instagram icon-search" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mb-10" href="#">
+                                <i class="fab fa-pinterest icon-search" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+                <hr class="hr">
+                © 2022 All Rights Reserved. Design by<a href="#">
+                    SuperShop@gmail.com</a>
+        </div>
+    </div>
+
+    <script src="../vendor/jQuery/jquery-3.3.1.slim.min.js"></script>
+    <script src="../vendor/Bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+    <script src="../Supershop_JS/TrangChu.js"></script>
+    
+</body>
+
+</html>

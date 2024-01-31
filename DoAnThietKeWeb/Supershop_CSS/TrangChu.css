@@ -1,0 +1,262 @@
+#header {
+  background-image: url(../imgs/BR1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 518px;
+}
+
+#header1 {
+  background-image: url(../imgs/BR2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+
+#hi {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  display: inline-block;
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  background-color: #f5f6f4;
+  color: #080808;
+  text-align: center;
+  line-height: 40px;
+  border: 3px solid rgb(9, 9, 9);
+}
+
+#main-menu {
+  background-color: transparent !important;
+}
+
+#main-menu * {
+  font-weight: bold;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.navbar-toggler{
+  background-color: #aefaed;
+}
+
+.img-background {
+  background: #ffffff;
+  padding: 10px 30px;
+}
+
+
+
+#login {
+  background-color: rgb(6, 6, 6);
+  border-radius: 80px;
+  padding: 10px;
+  transition: 0.14s;
+  color: #f0eeee;
+}
+
+
+.icon {
+  transition: 0.5s;
+  display: inline-block;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  background-color: #f5f6f4;
+  color: #080808;
+  text-align: center;
+  line-height: 30px;
+}
+
+.ss {
+  background-color: rgb(255, 192, 192);
+  padding: 10px;
+}
+
+#navbarDropdown {
+  border-radius: 80px;
+  padding: 10px;
+}
+
+#bell:hover {
+  background-color: rgb(235, 211, 211);
+  color: #fb0505;
+  padding: 4px 0;
+}
+
+#cart:hover {
+  background-color: rgb(235, 211, 211);
+  color: #fb0505;
+  padding: 4px 0;
+}
+
+.icon-search {
+  transition: 0.5s;
+  display: inline-block;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  background-color: #f5f6f4;
+  color: #080808;
+  text-align: center;
+  line-height: 30px;
+  border: 2px solid rgb(249, 9, 9);
+}
+
+.icon-search:hover {
+  background-color: #080808;
+  color: #fdfbfb;
+  border: #080808;
+}
+
+#search {
+  width: 210px;
+  border-radius: 90px;
+  border: 2px solid rgb(249, 9, 9);
+  padding-left: 20px;
+}
+
+.icon1 {
+  transition: 0.5s;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #f5f6f4;
+  color: #080808;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid rgb(9, 9, 9);
+  margin-bottom: 4px;
+}
+
+.icon1:hover {
+  background-color: rgb(9, 9, 9);
+  color: #faf8f8;
+}
+
+.buy {
+  transition: 0.5s;
+  display: inline-block;
+  width: 110px;
+  height: 40px;
+  background-color: #f5f6f4;
+  color: #080808;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid rgb(9, 9, 9);
+  border-radius: 100px;
+  margin-left: 15px;
+  margin-top: 9px;
+}
+
+.buy:hover {
+  background-color: #f80606;
+  color: #faf8f8;
+}
+
+.products {
+  background: #ebb3d1;
+  padding: 50px 100px;
+}
+
+.title_page {
+  text-align: center;
+  font-size: inherit;
+  margin: 10px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  margin-top: 20px;
+  color: #ff2811fd;
+}
+.logo {
+  width: 7em;
+  height: 5em; 
+}
+
+.logo1 {
+  width: 7em;
+  height: 5em;
+  border-radius: 200px;
+  border: 2px solid rgb(2, 2, 2);
+
+}
+
+
+
+
+
+.footer {
+  background-color: rgb(243, 227, 238);
+  color: rgb(233, 14, 14);
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.hr {
+  background-color: rgb(0, 0, 0);
+}
+
+ul,
+li,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.card:hover .truocxuong {
+  display: block;
+}
+
+.card {
+  width: 18rem;
+}
+
+.truocxuong {
+  display: none;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.khung:hover {
+  border: 1px solid #ffffff;
+}
+
+.khung {
+  background-color: #ffffff;
+  border: #ce0d0d;
+  padding-bottom: 20px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#slideshow{
+  width: 50%;
+  height: 500px;
+  margin: 10px auto;
+  position: relative;
+}
+
+#slideshow .slide{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-duration: inherit;
+  transition-property: transform;
+  transform: rotate(120deg) scale(0);
+}
+#slideshow .slide.current{
+  transform: rotate(360deg) scale(1);
+}
+#slideshow .slide.next{
+  transform: rotate(360deg) scale(0);
+}
+#slideshow .slide.prev{
+  transform: rotate(360deg) scale(1);
+}

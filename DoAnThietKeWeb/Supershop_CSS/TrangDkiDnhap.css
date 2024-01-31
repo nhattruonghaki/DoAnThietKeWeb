@@ -1,0 +1,49 @@
+body{
+  background-color: pink;
+}
+.login{
+  margin: 10px;
+  padding: 25px;
+
+}
+.login1{
+  
+  width: 300px;
+  padding: 25px;
+
+  border: 4px solid black;
+  background-color: rgb(255, 255, 255);
+  margin-left: 100px;
+
+}
+.logup{
+  width: 320px;
+  height: auto;
+  margin-left: 40px;
+  padding: 25px;
+  border: 4px solid black;
+  background-color: rgb(255, 255, 255);
+
+}
+#hide {
+  width: auto;
+  margin: 10px;
+  padding: 25px;
+  float: left;
+  display: none;
+}
+
+
+.hi {
+  font-size: 15px;
+  display: inline-block;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: #fadb97;
+  color: #080808;
+  text-align: center;
+  line-height: 40px;
+  font-size:larger;
+  border: 3px solid rgb(9, 9, 9);
+}

@@ -1,0 +1,167 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+ 
+} 
+#Giohang{
+  /* background-color: rgb(245, 167, 220); */
+  background: #f1c9df;
+  /* background: rgb(252, 125, 100); */
+
+}
+
+.table td, .table th {
+    text-align: center;
+
+            padding: 0.75rem;
+            vertical-align:inherit;
+            border-top: 1px solid #dee2e6;
+            /* background: #f1c9df; */
+            background: rgb(247, 176, 162);
+
+        }
+ h2{
+    text-align: center;
+    margin-bottom: 20px;
+ }
+
+.huhu{
+    text-align: center;
+    padding: 30px 0 20px 200px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.Thanhtoan{
+  
+  transition: 0.5s;
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+
+  background-color: #21e4e4;
+  color: #0a0a0a;
+  /* text-align: center; */
+  /* line-height: 20px; */
+  border: 2px solid rgb(240, 50, 129);
+  border-radius: 100px;
+   /* margin-left: 600px;  */
+  /* margin-top: 9px; */
+
+  display: flex;
+margin: auto;
+justify-content: center;
+
+}
+.tit{
+  padding-bottom: 30px;
+  font-size: 20px;
+  transition: 0.5s;
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #eea8a0;
+  color: #000000;
+
+  border: 2px solid rgb(240, 50, 129);
+
+display: flex;
+margin: auto;
+justify-content: center;
+
+}
+.photo {
+  background-position: center;
+  max-width: 100%;
+  height: 20em;
+  background: #ffffff;
+
+}
+
+
+.Thanhtoan :hover{
+  background-color: #f80606;
+  color: #faf8f8;
+}
+/* cuối trang */
+
+.logo1 {
+    width: 7em;
+    height: 5em;
+    border-radius: 200px;
+    border: 2px solid rgb(2, 2, 2);
+  
+  }
+  .icon-search {
+    transition: 0.5s;
+    display: inline-block;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #f5f6f4;
+    color: #080808;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid rgb(249, 9, 9);
+  }
+  
+  .icon-search:hover {
+    background-color: #080808;
+    color: #fdfbfb;
+    border: #080808;
+  
+  }
+  .icon1 {
+    transition: 0.5s;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #f5f6f4;
+    color: #080808;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid rgb(9, 9, 9);
+    margin-bottom: 4px;
+  
+  }
+  
+  .icon1:hover {
+    background-color: rgb(9, 9, 9);
+    color: #faf8f8;
+  }
+  .footer {
+    background-color: rgb(243, 227, 238);
+    color: rgb(233, 14, 14);
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  
+  .hr {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  ul,
+  li,
+  ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

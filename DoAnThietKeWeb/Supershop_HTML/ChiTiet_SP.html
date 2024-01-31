@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHI TIẾT SẢN PHẨM</title>
+    <link rel="stylesheet" href="../vendor/Bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/FontAwesome/fontawesome-free-5.8.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../Supershop_CSS/trangchitietsanpham.css">
+
+</head>
+<body>
+
+  <!-- menu đầu trang -->
+  <header id="header">
+  <div class="container-fluid">
+    <nav id="main-menu" class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="btn btn-outline-warning navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+        <i id="hi">SuperShop.com</i>
+        <a class="nav-link" href="./TrangChuUser.html">
+            <img class="logo3" src="../imgs/LOGO.png" alt="LOGO">
+        </a>
+        <a id="login" class="nav-link" href="./LOGIN.html"> Đăng nhập </a>
+        
+
+        <div class="row d-flex justify-content-center align-items-center">
+            <form action="#" class="form-inline my-2 my-lg-0">
+                <input id="search" class="form-control mr-sm-2" type="search" name="SP"
+                    placeholder="Search tên mô hình..." aria-hidden="true" />
+                <button class="fa fa-search icon-search" type="submit">
+                </button>
+            </form>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="btn btn-outline-danger fa fa-book-reader " href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Danh mục sản phẩm
+                    </a>
+                    <div class="dropdown-menu ss" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./TrangChuAdmin.html#SPKM">Sản phẩm khuyến mãi</a>
+                        <a class="dropdown-item" href="./TrangChuAdmin.html#SPBC">Sản phẩm bán chạy</a>
+                        <a class="dropdown-item" href="./TrangChuAdmin.html#SPM">Sản phẩm mới</a>
+                        <a class="dropdown-item" href="#LH">Liên hệ</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="btn btn-outline-danger fa fa-user-graduate " href="#"  role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    User
+                  </a>
+                  <div class="dropdown-menu ss" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./LOGIN.html">Đăng xuất</a>
+                    <a class="dropdown-item" href="./LichSuGD.html">Lịch sử giao dịch</a>
+                  </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i id="bell" class="fa fa-bell fa-lg icon" aria-hidden="true"></i></a>    
+                    </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./GioHang.html">
+                        <i id="cart" class="fa fa-cart-arrow-down fa-lg icon" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+</header>
+<!-- trang chi tiết sp -->
+<div class="khocdi"> 
+  <div class="khocnua"><H2>Chi Tiết Sản Phẩm</H2></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 khoangcach">
+                <div class="row">
+                    <div class="col">                        
+                      <img class="hinhsanpham" src="../imgs/SP02.jpg" alt="">                        
+                      <img class="dshinh img-thumbnail" src="../imgs/chitiet1.jpg" alt="">
+                      <img class="dshinh img-thumbnail" src="../imgs/chitiet2.jpg" alt=""> 
+                      <img class="dshinh img-thumbnail" src="../imgs/chitiet3.jpg" alt="">
+                      <img class="dshinh img-thumbnail" src="../imgs/chitiet4.jpg" alt="">
+                      <img class="dshinh img-thumbnail" src="../imgs/chitiet5.jpg" alt="">
+                    </div>                                     
+                    <div class="col vitri1">                   
+                      <ul>
+                        <li><h4>Tên sản phẩm: mô hình lamborgini </h4></li>
+                        <li>Giá gốc: <s>1,100,000 VNĐ</s></li>
+                        <li>Giảm giá: <span class="badge badge-primary">550000 VNĐ</span></li>
+                        <li>Nhà sản xuất: <span class="badge badge-primary">Việt Nam</span></li>
+                        <li>Trạng thái: số lượng còn lại <span class="badge badge-warning">500</span> chiếc</li> 
+                        <li>Giảm giá <span class="badge badge-danger">50%</span></li>                         
+                      </ul>                   
+                      <form method="post">
+                        <input type="hidden" name="SP" value="01">
+                        <br>Kích thước<br>
+                        <input type="radio" name="kichthuoc" required="required" value="1:32" checked>1:32
+                        <input type="radio" name="kichthuoc" value="1:64">1:64
+                        <input type="radio" name="kichthuoc" value="1:128">1:128
+                        <br>Màu sắc<br>
+                        <button type="button" value="đen" name ="Đen" class="btn btn-dark">Đen</button>
+                        <button type="button" value="xanhnhat" name ="xanhnhat" class="btn btn-info">Xanh nhạt</button>
+                        <button type="button" value="đỏ" name ="Đỏ" class="btn btn-danger">Đỏ</button>
+                        <button type="button" value="vàng" name ="Vàng" class="btn btn-warning">Vàng</button><br>
+                       <br>
+                        Nhập số lượng: <input name="soluong" type="number" value="1" min="1" max="500">
+                     <br> 
+                     <br>  
+                    <button class="btn btn-success btn-lg" type="submit">
+                        <i class="fas fa-shopping-bag"></i> Thêm vào giỏ hàng
+                    </button>
+                    <a id="SP001" class="btn btn-primary btn-lg" href="./GioHang.html" role="button">
+                        <i class="fas fa-shopping-cart"></i> Mua hàng</a>            
+                  </form>
+                </div>
+              </div>
+              <br>
+
+            <div class="row">
+                <div class="col-12 mota"><br>
+                    <h3>Mô tả sản phẩm</h3>
+                    <hr>
+                        <p>Mô hình xe Lamborghini Aventador LP 740 tỉ lệ 1:32 hãng TY Models</p>
+                        <p>Thông tin tham khảo</p>
+                        <p>Lamborghini Aventador là một mẫu siêu xe thể thao cỡ trung của hãng xe ô tô danh tiếng Lamborghini từ Ý. Lamborghini Aventador lần đầu tiên ra mắt vào năm 2011 tại triển lãm Geneva Motor Show. Đây được xem là một phiên bản mới thay thế cho mẫu xe cũ Murcielago.
+                            Thật tuyệt vời khi ta sở hữu 1 chiếc mô hình được thiết kế đầy tinh tế và sống động để trưng bày trên bàn làm việc, tặng bàn bè người thân trong những dịp quan trọng hoặc thỏa mãn niềm đam mê sưu tầm. Mang cả thế giới xe đến ngôi nhà của bạn.</p>
+                    <h3>Chi tiết sản phẩm</h3>
+                    <table class="table table-striped border">
+                        <tbody>
+                            <tr><td>Mã sản phẩm</td><td>s9626174713</td></tr>
+                            <tr><td>Loại phương tiện</td><td>Xe hơi</td></tr>
+                            <tr><td>Thương hiệu</td><td>OEM</td></tr>
+                            <tr><td>Kho hàng</td><td>Hà Nội</td></tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="img-background row">
+              <div class="col-md-12 title_page">
+                <h2 class="fa fa-piggy-bank"> Sản Phẩm Liên Quan</h2>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                  <button class="khung" type="submit">
+                    <input type="hidden" name="SP" value="01">
+                    <img src="../imgs/SP01.jpg" class="hinhlq card-img-top" alt="kawasaki Z1000__SP01">
+                    <b><br>kawasaki Z1000__SP01</b>
+                        <br>Giá cũ: <s>2,500,000 VNĐ</s><br>Giá mới: 1,250,000 VNĐ                   
+                  </button>
+                </form>
+                <div class="truocxuong">
+                  <form action="./GioHang.html">
+                    <input type="hidden" name="SP" value="01">
+                    <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                  </form>
+                </div>
+              </div>
+        
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                  <button class="khung" type="submit">
+                    <input type="hidden" name="SP" value="02">
+                    <img src="../imgs/SP02.jpg" class="hinhlq card-img-top" alt="Huracan LP610-4 __SP02">
+                    <b><br>Huracan LP610-4 __SP02</b>
+                  <br>Giá cũ: <s>3,000,000 VNĐ</s><br>Giá mới: 1,500,000 VNĐ                  
+                  </button>
+                </form>
+                <div class="truocxuong">
+                  <form action="giohang.html">
+                    <input type="hidden" name="SP" value="02">
+                    <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                  </form>
+                </div>
+              </div>
+               
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                  <button class="khung" type="submit">
+                    <input type="hidden" name="SP" value="03">
+                    <img src="../imgs/SP06.jpg" class="hinhlq card-img-top" alt="Lamborghini Huracan__SP03">
+                    <b><br>Lamborghini Huracan__SP03</b>                   
+                        <br>Giá: 1,100,000 VNĐ                     
+                  </button>
+                </form>
+                <div class="truocxuong">
+                  <form action="./GioHang.html">
+                    <input type="hidden" name="SP" value="03">
+                    <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                  </form>
+                </div>
+              </div>
+        
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3 card">
+                <form action="./ChiTiet_SP.html">
+                  <button class="khung" type="submit">
+                    <input type="hidden" name="SP" value="04">
+                    <img src="../imgs/SP07.jpg" class="hinhlq card-img-top" alt="BMW S10000RR__SP04">
+                    <b><br>BMW S10000RR__SP04</b>                   
+                        <br>Giá: 700,000 VNĐ                 
+                  </button>
+                </form>
+                <div class="truocxuong">
+                  <form action="./GioHang.html">
+                    <input type="hidden" name="SP" value="04">
+                    <button type="submit" class="buy"><i></i> Mua Ngay</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>       
+                <br>
+          <div class="vien col-sm-12">
+            <form method="post" >
+                    <fieldset>
+                        <legend class="binhluan">Danh sách bình luận</legend>
+                        <div class="left1">
+                        <div class="tendaidien1"><img class="anhdaidien1" src="../imgs/cap1.jpg" alt=""> 
+                          Cường cao cấp
+                        </div>
+                        <label>Nội dung bình luận: </label><br>
+                        <textarea name="binhluan" placeholder="Mời bạn đóng góp ý kiến, vui lòng không spam, share link kiếm tiền, thiếu lành mạnh,..." 
+                        cols="45" rows="2" minlength="1" required="required"></textarea>
+                        <br>                       
+                       Số điểm đánh giá: <input type="number" name="diemdanhgia" min="1" max="100" placeholder="1->100" required="required"><br>
+                        <br>
+                        Ngày đăng: <input type="date" name="ngaydang" min="2022-07-26"  required="required"><br>
+                        <button class="btn btn-success " type="submit">Gửi</button><br>
+                        </div>
+                    </fieldset>
+                    <br>                   
+                    <div class="left1">
+                      <div class="tendaidien1"><img class="anhdaidien1" 
+                         src="../imgs/cap2.jpg" alt="">  William tốc độ
+                      </div>
+                        <label>Nội dung bình luận: </label> Good! Great! Perfect!<br>
+                        <label>Số điểm đánh giá: </label> 100/100<br>
+                        <label>Ngày đăng: </label> 25/7/2022<br>
+                      <br>
+                      <div class="tendaidien1"><img class="anhdaidien1" 
+                        src="../imgs/cap3.jpg" alt="">  Thiếu nữ xinh đẹp 
+                      </div>
+                        <label>Nội dung bình luận: </label> Good! Great! Perfect!<br>
+                        <label>Số điểm đánh giá: </label> 100/100<br>
+                        <label>Ngày đăng: </label> 25/7/2022<br>
+                    </div>
+                    <br> 
+
+                    <nav aria-label="Page navigation example ">
+                      <ul class="pagination justify-content-center">
+                          <li class="page-item disabled ">
+                              <a class="btn btn-outline-dark " href="#" tabindex="-1"><i class="fas fa-chevron-left "></i> Previous</a>
+                          </li>
+                          <li class="page-item"><a class="btn btn-outline-dark" href="#">1</a></li>
+                          <li class="page-item"><a class="btn btn-outline-dark" href="#">2</a></li>
+                          <li class="page-item"><a class="btn btn-outline-dark" href="#">3</a></li>
+                          <li class="page-item">
+                              <a class="btn btn-outline-dark " href="#">Next <i class="fas fa-chevron-right "></i></a>
+                          </li>
+                      </ul>
+                  </nav>
+            </form>  
+          </div> 
+                  
+        </div>   
+</div>
+</div>
+
+  <!-- CUỐI TRANG -->
+<div id="LH" class="footer">
+  <div class="container">
+      <div class="row">
+
+          <a class="nav-link" href="#">
+              <img class="logo1" src="../imgs/LOGO.png" alt="#" /><br>
+              SuperShop.com
+          </a>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <h3>Thông tin liên hệ</h3>
+              <ul>
+                  <li class="nav-item">
+                      <a class="mb-10" href="#">
+                          <i class="fa fa-door-open icon1" aria-hidden="true"></i>
+                          Giờ Mở Cửa: 6:30 - 21:00
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="mb-10" href="#">
+                          <i class="fa fa-location-arrow icon1" aria-hidden="true"></i>
+                          65 Huỳnh Thúc Kháng, Q.1 <br>TP.HCM.
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="mb-10" href="#">
+                          <i class="fa fa-phone-volume icon1" aria-hidden="true"></i>
+                          028 38 212 868
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="mb-10" href="#">
+                          <i class="fa fa-mail-bulk icon1" aria-hidden="true"></i>
+                          ktct@caothang.edu.vn
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="mb-10" href="#">
+                          <i class="fab fa-internet-explorer icon1" aria-hidden="true"></i>
+                          www.supershop@gmail.com
+                      </a>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <h3>Team SuperShop </h3>
+              <ul>
+                  <li>
+                      1. Lương Nhật Trường<br />
+                      2. Lê Phước Sang<br />
+                      3. Nguyễn Thanh Sang<br />
+                      4. Nguyễn Công Thành<br />
+                      5. Trần Vũ Minh Thương<br />
+                      6. Cao Trí Nhất<br />
+                      7. Quách Văn Sang<br />
+                      8. Huỳnh Phước Thịnh<br />
+                  </li>
+              </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <h3>Chính Sách và Hỗ trợ khách hàng</h3>
+              <ul>
+                  <li>
+                      Tuyển dụng
+                      <br />
+                      Chương trình tích điểm
+                      <br />
+                      Chính sách giao hàng toàn quốc
+                      <br />
+                      Chính sách bảo mật
+                  </li>
+              </ul>
+          </div>
+              <div class="column">
+                  <h3>Đối Tác </h3>
+              <ul class="row">
+                  <li class="nav-item">
+                      <a class="mb-10" href="#">
+                          <i class="fab fa-facebook icon-search" aria-hidden="true"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="mb-10" href="#">
+                          <i class="fab fa-twitter icon-search" aria-hidden="true"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="mb-10" href="#">
+                          <i class="fab fa-instagram icon-search" aria-hidden="true"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="mb-10" href="#">
+                          <i class="fab fa-pinterest icon-search" aria-hidden="true"></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+          <hr class="hr">
+          © 2022 All Rights Reserved. Design by<a href="#">
+              SuperShop@gmail.com</a>
+  </div>
+</div>                 
+    <script src="../vendor/jQuery/jquery-3.6.0.min.js" ></script>
+    <script src="../vendor/Bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js" ></script>
+    <script src="../vendor/jQuery/jquery-3.3.1.slim.min.js"></script>
+  </body>
+</html>

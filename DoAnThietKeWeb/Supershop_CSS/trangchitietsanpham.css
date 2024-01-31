@@ -1,0 +1,367 @@
+/*trang chi tiet san pham*/
+.khocdi{
+  background: #ebb3d1;
+}
+.khocnua{
+  padding-top: 5px;
+  text-align: center;
+}
+.hinhsanpham{
+    display: block;
+    width: 400px;
+}
+.vitri1{
+    margin-top: 20px;
+    white-space: nowrap;
+}
+.vitri2{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 35px;
+}
+.khoangcach{
+    margin:30px;
+    background-color: #ffffff;
+}
+.mota{
+    background-color: #f3f2f2;
+}
+li{
+    white-space: nowrap;
+}
+h2{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.dshinh{
+    width:70px;
+    height:60px;
+    margin-top: 20px; 
+    margin-left: 5px;
+}
+.dshinh:hover{
+    width:120px;
+    height:110px;
+}
+.hinhlq{
+    width:200px;
+    height:200px;
+}
+
+.hinhlq:hover{
+    width:240px;
+    height:240px;
+}
+
+hr{
+    width: 1050px;
+    max-width: 1300px;
+    min-width: 450px;
+    margin-left: 20px;
+}
+.left{
+    margin-left: 50px;
+}
+.left1{
+  margin-left: 90px;
+}
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+.table {
+    display: table;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+}
+.border {
+    border: 1px solid #dee2e6!important;
+}
+.bigBox {
+  width:800px; 
+  height:300px; 
+  border:1px solid black;
+
+}
+.seForm{
+  border: 1px solid black; 
+  margin-top:10px;
+ 
+}
+.binhluan{
+  text-align: center;
+}
+.anhdaidien1{
+    width:70px;
+    height:80px;
+    border-radius: 50px;
+}
+.tendaidien1{
+    color: blue;
+    font-weight: 700;
+}
+
+
+.btn {
+  padding: 0.3rem 0.75rem;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+.vien{
+    margin-top: 3rem;
+    background-color: white;
+    border: 3px solid silver;
+    padding: auto;
+}        
+
+/*san pham lien quan*/
+.img-background {
+    background: #ffffff;
+    padding: 10px 30px;
+  }
+  .title_page {
+    text-align: center;
+    font-size: inherit;
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    margin-top: 20px;
+    color: #ff2811fd;
+  
+  }
+  .khung:hover {
+    border: 1px solid #ffffff;
+  }
+  
+  .khung {
+    background-color: #ffffff;
+    border: #ce0d0d;
+    padding-bottom: 20px;
+  }
+  .card:hover .truocxuong {
+    display: block;
+  }
+  
+  .card {
+    width: 18rem;
+  }
+  
+  .truocxuong {
+    display: none;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+  .buy {
+    transition: 0.5s;
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    background-color: #f5f6f4;
+    color: #080808;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid rgb(9, 9, 9);
+    border-radius: 100px;
+    margin-left: 15px;
+    margin-top: 9px;
+  }
+  
+  .buy:hover {
+    background-color: #f80606;
+    color: #faf8f8;
+  } 
+  .logo3 {
+    width: 8em;
+    height: 6em;
+  }
+
+ .logo1 {
+    width: 6em;
+    height: 4em;
+    border-radius: 200px;
+    border: 2px solid rgb(2, 2, 2);
+  
+  }
+  
+  .footer {
+    background-color:#f1c9df;;
+    color: rgb(233, 14, 14);
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  
+  .hr {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  ul,
+  li,
+  ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  
+  #login {
+    background-color: rgb(6, 6, 6);
+    border-radius: 80px;
+    padding: 10px;
+    transition: 0.14s;
+    color: #f0eeee;
+  }
+
+  .icon1 {
+    transition: 0.5s;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #f5f6f4;
+    color: #080808;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid rgb(9, 9, 9);
+    margin-bottom: 4px;
+  }
+  
+  .icon1:hover {
+    background-color: rgb(9, 9, 9);
+    color: #faf8f8;
+  }
+
+  
+  
+  
+  .icon-search {
+    transition: 0.5s;
+    display: inline-block;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #f5f6f4;
+    color: #080808;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid rgb(249, 9, 9);
+  }
+  
+  .icon-search:hover {
+    background-color: #080808;
+    color: #fdfbfb;
+    border: #080808;
+  }
+
+  /* menu đầu trang */
+  #header {
+    background-image: url(../imgs/BR1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 130px;
+  }
+
+  #hi {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    display: inline-block;
+    border-radius: 50px;
+    width: 135px;
+    height: 40px;
+    background-color:#fff;
+    color: #080808;
+    text-align: center;
+    line-height: 40px;
+    border: 3px solid rgb(9, 9, 9);
+  }
+  #main-menu {
+    background-color: transparent !important;
+  }
+  
+  #main-menu * {
+    font-weight: bold;
+    align-items: center;
+    margin-left: 6px;
+  }
+
+  .navbar-toggler{
+    background-color: #aefaed;
+  }
+ 
+  .icon {
+    transition: 0.5s;
+    display: inline-block;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #f5f6f4;
+    color: #080808;
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  .ss {
+    background-color: rgb(255, 192, 192);
+    padding: 10px;
+  }
+  #bell:hover {
+    background-color: rgb(235, 211, 211);
+    color: #fb0505;
+    padding: 4px 0;
+  }
+  
+  #cart:hover {
+    background-color: rgb(235, 211, 211);
+    color: #fb0505;
+    padding: 4px 0;
+  }
+  #search {
+    width: 250px;
+    border-radius: 90px;
+    border: 2px solid rgb(249, 9, 9);
+    padding-left: 20px;
+  }
+
+  .icon-search {
+    transition: 0.5s;
+    display: inline-block;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #f5f6f4;
+    color: #080808;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid rgb(249, 9, 9);
+  }
+  
+  .icon-search:hover {
+    background-color: #080808;
+    color: #fdfbfb;
+    border: #080808;
+  }
+  #login {
+    background-color: rgb(6, 6, 6);
+    border-radius: 80px;
+    padding: 10px;
+    transition: 0.14s;
+    color: #f0eeee;
+  }
+  
+  #navbarDropdown {
+    border-radius: 80px;
+    padding: 10px;
+  }
+  
+  
+  
+  
+  
+
+

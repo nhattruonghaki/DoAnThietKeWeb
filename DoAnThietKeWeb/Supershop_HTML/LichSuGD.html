@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LỊCH SỬ GIAO DỊCH USER</title>
+  <link rel="stylesheet" href="../vendor/Bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../vendor/FontAwesome/fontawesome-free-5.8.1-web/css/all.min.css" />
+  <link rel="stylesheet" href="../Supershop_CSS/lichsu.css" />
+
+</head>
+<body>
+    <div class="b">
+        <p class="admin">Supper Shop</p>
+    </div>
+  
+  <div class="row"><br> 
+      <div class="col-md-12">
+        <div class="tile">
+          <div class="tile-body">
+            <div class="row element-button">
+                </div>
+            </div>
+            <div class="app-title">
+              <ul class="app-breadcrumb breadcrumb side">
+                <li class="breadcrumb-item active"><a href="#"><b>Lịch sử giao dịch </b></a></li>
+              </ul>
+            </div>
+            <div class="row"><div class="col-sm-12"><table class="table table-hover table-bordered dataTable no-footer" id="sampleTable" role="grid" >
+              <thead class="nen2"><tr>
+                  <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Đơn hàng: activate to sort column ascending" style="width: 167.641px;">Đơn hàng</th>
+                  <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Tổng tiền: activate to sort column ascending" style="width: 118.25px;">Ngày đặt</th>
+                  <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Số lượng: activate to sort column ascending" style="width: 56.3594px;">Số lượng</th>
+                  <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Tổng tiền: activate to sort column ascending" style="width: 78.25px;">Tổng tiền</th>
+                  <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Tình trạng: activate to sort column ascending" style="width: 98.75px;">Tình trạng</th>
+                  <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Lý do hủy: activate to sort column ascending" style="width: 98.75px;">Hủy đơn hàng</th>
+                  <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Lý do hủy: activate to sort column ascending" style="width: 128.75px;">Lý do hủy</th>
+              </tr></thead>
+              <tbody class="nen">
+                <tr>
+                <td>Đơn hàng 
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                       #001
+                  </button>
+                  <div class="modal" id="myModal">
+                     <div class="modal-dialog modal-lm">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h4 class="modal-title"> Thông tin chi tiết</h4>
+                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              </div>
+                            <div class="modal-body">
+                               <div>
+                                      <img src="../imgs/chitiet1.jpg" alt="" class="anh" >
+                                      <h5>Mô hình xe Lamborghini Aventador LP 740</h5>
+                                      <p>Số lượng: 1 | Giá: 900.000</p><hr>
+                                      <img src="../imgs/chitiet3.jpg" alt="" class="anh">
+                                      <h5>Mô hình xe z1000 LP737</h5>
+                                      <p>số lượng 2 | Giá: 400.000 </p>
+                                      <h5>Tổng tiền: 1.700.000 VND</h5><hr>
+                                  <h5>Họ tên: Nguyễn Quang Đại</h5>
+                                      <p>Sdt: 0984898458</p>
+                                      <p>Địa chỉ: 38/13,Gò Dầu,Phường Tân Sơn Nhì,Quận Tân Phú,TP HCM</p>
+                                      <P>Ngày giờ đặt: 20/9/2021 - 8:21 AM</P>
+                                      <P>Ngày giờ duyệt: 21/9/2021 - 6:15 PM</P>
+                               </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                              </div>
+                           </div>
+                        </div>
+                      </div>
+                     </div>
+                      </td>
+                      <td>20/9/2021</td>
+                      <td>3</td>
+                      <td>1.700.000 đ</td>
+                      <td class="option1">Đang sử lý</td>
+                      <td>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal12">
+                          Hủy
+                     </button>
+                     <div class="modal" id="myModal12">
+                       <div class="modal-dialog modal-lm">
+                          <div class="modal-content">
+                             <div class="modal-header">
+                       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal32">
+                          Xác nhận
+                     </button>
+                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                             </div>
+                          </div>
+                     </div>
+                     <div class="modal" id="myModal32">
+                       <div class="modal-dialog modal-lm">
+                          <div class="modal-content">
+                             <div class="modal-header">
+                                <h4 class="modal-title"> Nhập vào lý do muốn hủy</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             </div>
+                           <div class="modal-body">
+                             <form method="post">
+                                <input size="50"><br>
+                                <input type="submit" class="optionfull2 btn btn-primary" value="xác nhận">
+                        </form>
+                             <div class="modal-footer">
+                               
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                             </div>
+                          </div>
+                       </div>
+                     </div>
+                    </div>
+                     </div>
+                      </td>
+                      <td></td>
+                    </tr>
+                      <tr> 
+                      <td>Đơn hàng 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal9">
+                              #002
+                         </button>
+                         <div class="modal" id="myModal9">
+                            <div class="modal-dialog modal-lm">
+                               <div class="modal-content">
+                                  <div class="modal-header">
+                                     <h4 class="modal-title"> Thông tin chi tiết</h4>
+                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  </div>
+                                <div class="modal-body">
+                                   <div>
+                                          <img src="../imgs/chitiet3.jpg" alt="" class="anh">
+                                          <h5>Mô hình xe z1000 LP737</h5>
+                                          <p>số lượng 1 | Giá: 400.000 </p>
+                                          <h5>Tổng tiền: 400.000 VND</h5><hr>
+                                          <h5>Họ tên: Nguyễn Minh Quân</h5>
+                                          <p>- Sdt: 09957539483</p>
+                                          <p>- Địa chỉ: 38 Lũy Bán Bích,Quận Tân Phú,TP HCM</p>
+                                          <P>- Ngày giờ đặt: 25/7/2021 - 9:21 AM</P>
+                                          <P>- Ngày giờ duyệt: 25/7/2021 - 8:15 PM</P>
+                                   </div>
+                                  <div class="modal-footer">
+                                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      </td>
+                      <td>25/7/2022</td>
+                      <td>1</td>
+                      <td>400.000 đ</td>                 
+                      <td class="optionhuy chuanhuy"> Đã hủy </td>
+                      <td></td>
+                      <td class="optionhuy">Tôi không còn nhu cầu</td> </tr>
+                      <tr>
+                     <td>Đơn hàng 
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+                        #003
+                   </button>
+                   <div class="modal" id="myModal1">
+                      <div class="modal-dialog modal-lm">
+                         <div class="modal-content">
+                            <div class="modal-header">
+                               <h4 class="modal-title"> Thông tin chi tiết</h4>
+                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                          <div class="modal-body">
+                              <div>
+                                      <img src="../imgs/SP01.jpg" alt="" class="anh">
+                                      <h5>Mô hình xe Lamborghini MRB 656</h5>
+                                      <p>Số lượng: 1 | Giá: 700.000</p><hr>
+                                      <img src="../imgs/SP02.jpg" alt=""  class="anh">
+                                      <h5>Mô hình xe MECSEDES cổ 1952</h5>
+                                      <p>số lượng 1 | Giá: 600.000 </p><hr>
+                                      <img src="../imgs/SP03.jpg" alt="" class="anh">
+                                      <h5>Mô hình xe quân đội Anh 1948</h5>
+                                      <p>số lượng 2 | Giá: 450.000 </p>
+                                      <h5>Tổng tiền: 1.750.000 VND</h5>
+                                      <hr>
+                                      <h5>Họ tên: Trần Minh Tuấn</h5>
+                                      <p>- Sdt: 09598583803</p>
+                                      <p>- Địa chỉ: 93,Lý Tự Trọng,Quận 1,TP HCM</p>
+                                      <P>- Ngày giờ đặt: 24/7/2022 - 9:21 AM</P>
+                                      <P>- Ngày giờ duyệt: 24/9/2021 - 8:15 PM</P>
+                                      <p>- Ngày giờ giao: 26/9/2021 - 10:20 AM</p>
+                                  </div>
+                            <div class="modal-footer">
+                               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+               </div>
+                      <td>24/7/2022</td>
+                      <td>3 </td>
+                      <td>1.7500.000 đ</td>
+                      <td class="option4">Hoàn thành</td>
+                   <td> </td>
+                   <td></td>
+                    </tr>
+                    <tr>  
+                      <td>Đơn hàng
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+                          #004
+                     </button>
+                     <div class="modal" id="myModal2">
+                        <div class="modal-dialog modal-lg">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h4 class="modal-title"> Thông tin chi tiết</h4>
+                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              </div>
+                            <div class="modal-body">
+                            <div>
+                                      <img src="../imgs/SP15.jpg" alt="" class="anh">
+                                      <h5>Mô hình xe MECSEDES cổ 1952</h5>
+                                      <p>số lượng 1 | Giá: 600.000 </p>
+                                      <p>Tổng tiền: 600.000 VND</p>
+                                      <hr>
+                                      <h5>Họ tên: Nguyễn Đại Cường </h5>
+                                      <p>- Sdt: 09598583803</p>
+                                      <p>- Địa chỉ: 53, Trường Trinh,Quận Tân Bình,TP HCM</p>
+                                      <P>- Ngày giờ đặt: 10/7/2022 - 11:21 AM</P>
+                                      <P>- Ngày giờ duyệt: 10/7/2022 - 4:15 PM</P>
+                                      <p>- Ngày giờ giao: 14/9/2021 - 7:20 AM</p>
+                                 </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                      <td>10/7/2022</td>
+                      <td>1 </td>
+                      <td>600.000 đ</td>
+                      <td class="option1">Đang sử lý</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal19">
+                       Hủy
+                  </button>
+                <div class="modal" id="myModal19">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal34">
+                     Xác nhận
+                </button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+                <div class="modal" id="myModal34">
+                  <div class="modal-dialog modal-lm">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h4 class="modal-title"> Nhập vào lý do muốn hủy</h4>
+                           <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                      <div class="modal-body">
+                        <form method="post">
+                           <input size="50">
+                           <input type="submit" class="optionfull2 btn btn-danger" value="xác nhận">
+                   </form>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+               </div>
+              </td>
+              <td></td>
+                    </tr>
+                      <tr> 
+                      <td>Đơn hàng
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+                          #005
+                     </button>
+                     <div class="modal" id="myModal3">
+                        <div class="modal-dialog modal-lm">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h4 class="modal-title"> Thông tin chi tiết</h4>
+                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              </div>
+                            <div class="modal-body">
+                              <div>
+                                      <img src="../imgs/SP06.jpg" alt="" class="anh">
+                                      <h5>Mô hình xe bán tải Honda MB356</h5>
+                                      <p>số lượng 1 | Giá: 550.000 </p>
+                                      <p>Tổng tiền: 50.000 VND</p>
+                                      <hr>
+                                      <h5>Họ tên: Nguyễn Minh Quốc </h5>
+                                      <p>- Sdt: 095489483</p>
+                                      <p>- Địa chỉ: 83, Nguyễn Thị Minh Khai,Quận 1,TP HCM</p>
+                                      <P>- Ngày giờ đặt: 11/7/2022 - 10:21 PM</P>
+                                      <P>- Ngày giờ duyệt: 12/7/2022 - 8:15 AM</P>
+                                  </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                      <td>11/7/2022</td>
+                      <td>3 </td>
+                      <td>1.245.000 đ</td>
+                      <td class="option3">Đang hoàn thành</td>
+                    <td>    
+              </td>
+              <td></td>
+              </tbody>
+            </table></div></div>
+            
+            
+
+            </div>
+          
+            <nav aria-label="Page navigation example ">
+               <ul class="pagination justify-content-center">
+                   <li class="page-item disabled ">
+                       <a class="btn btn-outline-dark " href="#" tabindex="-1"><i class="fas fa-chevron-left "></i>
+                           Previous</a>
+                   </li>
+                   <li class="page-item"><a class="btn btn-outline-dark" href="#">1</a></li>
+                   <li class="page-item"><a class="btn btn-outline-dark" href="#">2</a></li>
+                   <li class="page-item"><a class="btn btn-outline-dark" href="#">3</a></li>
+                   <li class="page-item">
+                       <a class="btn btn-outline-dark " href="#">Next <i class="fas fa-chevron-right "></i></a>
+                   </li>
+               </ul>
+            </nav>
+            
+
+             
+            </div>
+         
+  </div>
+   
+  <!-- CUỐI TRANG -->
+<div id="LH" class="footer">
+   <div class="container">
+       <div class="row">
+ 
+           <a class="nav-link" href="#">
+               <img class="logo1" src="../imgs/LOGO.png" alt="#" /><br>
+               SuperShop.com
+           </a>
+ 
+           <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+               <h3>Thông tin liên hệ</h3>
+               <ul>
+                   <li class="nav-item">
+                       <a class="mb-10" href="#">
+                           <i class="fa fa-door-open icon1" aria-hidden="true"></i>
+                           Giờ Mở Cửa: 6:30 - 21:00
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="mb-10" href="#">
+                           <i class="fa fa-location-arrow icon1" aria-hidden="true"></i>
+                           65 Huỳnh Thúc Kháng, Q.1 TP.HCM.
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="mb-10" href="#">
+                           <i class="fa fa-phone-volume icon1" aria-hidden="true"></i>
+                           028 38 212 868
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="mb-10" href="#">
+                           <i class="fa fa-mail-bulk icon1" aria-hidden="true"></i>
+                           ktct@caothang.edu.vn
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="mb-10" href="#">
+                           <i class="fab fa-internet-explorer icon1" aria-hidden="true"></i>
+                           www.supershop@gmail.com
+                       </a>
+                   </li>
+               </ul>
+           </div>
+ 
+           <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+               <h3>Team SuperShop </h3>
+               <ul>
+                   <li>
+                       1. Lương Nhật Trường<br />
+                       2. Lê Phước Sang<br />
+                       3. Nguyễn Thanh Sang<br />
+                       4. Nguyễn Công Thành<br />
+                       5. Trần Vũ Minh Thương<br />
+                       6. Cao Trí Nhất<br />
+                       7. Quách Văn Sang<br />
+                       8. Huỳnh Phước Thịnh<br />
+                   </li>
+               </ul>
+           </div>
+ 
+           <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+               <h3>Chính Sách và Hỗ trợ khách hàng</h3>
+               <ul>
+                   <li>
+                       Tuyển dụng
+                       <br />
+                       Chương trình tích điểm
+                       <br />
+                       Chính sách giao hàng toàn quốc
+                       <br />
+                       Chính sách bảo mật
+                   </li>
+               </ul>
+           </div>
+               <div class="column">
+                   <h3>Đối Tác </h3>
+               <ul class="row">
+                   <li class="nav-item">
+                       <a class="mb-10" href="#">
+                           <i class="fab fa-facebook icon-search" aria-hidden="true"></i>
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="mb-10" href="#">
+                           <i class="fab fa-twitter icon-search" aria-hidden="true"></i>
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="mb-10" href="#">
+                           <i class="fab fa-instagram icon-search" aria-hidden="true"></i>
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="mb-10" href="#">
+                           <i class="fab fa-pinterest icon-search" aria-hidden="true"></i>
+                       </a>
+                   </li>
+               </ul>
+           </div>
+       </div>
+   </div>
+   <div class="container">
+           <hr class="hr">
+           © 2022 All Rights Reserved. Design by<a href="#">
+               SuperShop@gmail.com</a>
+   </div>
+ </div>
+   
+  
+  
+      <script src="../vendor/jQuery/jquery-3.2.1.min.js"></script>
+      <script src="../vendor/Bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+      <script src="../vendor/jQuery/popper.min.js"></script>
+</body>
+</html>
